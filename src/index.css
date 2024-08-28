@@ -1,22 +1,22 @@
-* {
+*{
   padding: 0;
   margin: 0;
+
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+body{
   background: black;
 }
 
-.Box {
+.Box{
   color: white;
   height: 8rem;
-  width: 100%; /* Adjust to 100% for responsiveness */
-  max-width: 31.25rem; /* Maintain a max-width */
+  width: 31.25rem;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -24,61 +24,57 @@ body {
   margin-top: 5rem;
 }
 
-.boxMessageLeft {
+.boxMessageLeft{
   float: left;
   padding: 1rem;
 }
-
-.boxMessageRight {
+.boxMessageRight{
   padding: 1rem;
-  width: 100%; /* Adjust to 100% for responsiveness */
-  max-width: 10rem; /* Maintain a max-width */
+  width: 10rem;
   float: right;
 }
 
-.DateP {
+.DateP{
   margin-top: 1rem;
 }
 
-/* Box Input */
-.BoxInput {
+/*  Box Input */
+
+.BoxInput{
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
-  width: 100%; /* Adjust to 100% for responsiveness */
-  max-width: 31.25rem; /* Maintain a max-width */
+  width: 31.25rem;
   justify-content: center;
   display: flex;
 }
 
-.inputS {
+.inputS{
   height: 3rem;
-  width: 100%; /* Adjust to 100% for responsiveness */
-  max-width: 25rem; /* Maintain a max-width */
+  width: 25rem;
   margin-right: 1rem;
   border: none;
   padding-left: 1rem;
   border-radius: 0.5rem;
 }
 
-.ButtonS {
+.ButtonS{
   border-radius: 0.5rem;
-  width: 100%; /* Adjust to 100% for responsiveness */
-  max-width: 5rem; /* Maintain a max-width */
+  width: 5rem;
   border: none;
   background-color: rgb(51, 51, 239);
   color: white;
 }
 
-.ButtonS:hover {
+.ButtonS:hover{
   background-color: rgb(0, 0, 255);
 }
 
 /* TodoCard */
+
 .todoItem {
   height: 7rem;
-  width: 100%; /* Adjust to 100% for responsiveness */
-  max-width: 31.25rem; /* Maintain a max-width */
+  width: 31.25rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.9rem;
@@ -95,85 +91,28 @@ body {
   gap: 10px;
 }
 
-.boxH1 {
+.boxH1{
   padding-left: 2rem;
   font-size: 1.9rem;
 }
 
-.actionContainer {
+.actionContainer{
   padding-right: 2rem;
 }
 
-.butDelete, .butEdit {
+.butDelete{
+  background-color: aqua;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border:none;
+  background-color: white;
+  color: black;
+}
+
+.butEdit{
   padding: 1rem;
   border-radius: 0.5rem;
   border: none;
   background-color: white;
   color: black;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .Box {
-    width: 90%;
-    margin-top: 2rem;
-  }
-
-  .BoxInput {
-    width: 90%;
-  }
-
-  .inputS {
-    width: 70%;
-  }
-
-  .ButtonS {
-    width: 30%;
-  }
-
-  .todoItem {
-    width: 90%;
-  }
-
-  .boxH1 {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-  }
-
-  .actionContainer {
-    padding-right: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .boxH1 {
-    font-size: 1.2rem;
-    padding-left: 0.5rem;
-  }
-
-  .ButtonS, .inputS {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .BoxInput {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .inputS {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .todoItem {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .actionContainer {
-    justify-content: space-around;
-    padding-right: 0;
-  }
 }
