@@ -27,7 +27,7 @@ export default function Message() {
     <div className='Box'>
         <div className='boxMessageLeft'>
             <h1>{Message}</h1>
-            <h2>Ramdan Abdul Gani</h2>
+            <h2>User</h2>
             <p className='DateP'>Time : {jam.toLocaleTimeString()}</p>
         </div>
 
